@@ -68,6 +68,7 @@ header p{
     margin-top: 8px;
     font-size: 16px;
 }*/
+
 .nav{
     display: flex;
     justify-content: center;
@@ -75,6 +76,7 @@ header p{
     background-color: #446a91;
     padding: 10px;
     margin-top: 10px;
+    align-items: center;
 }
 .nav a{
     color: white;
@@ -91,22 +93,72 @@ header p{
     color: #0a3d62;
     border-radius: 5px;
 }
+
+.project-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.nav-main-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.project-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #4e6a8e;
+  min-width: 180px;
+  border-radius: 6px;
+  padding: 8px 0;
+  z-index: 1000;
+}
+
+
+.project-menu a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: white;
+}
+
+.project-menu a:hover {
+  background: #3cbadd;
+  
+}
+
+.project-dropdown:hover .project-menu {
+  display: block;
+}
+
+
 section h2{
     border-bottom: 2px solid #ccc;
     padding-bottom: 5px;
 }
-.skills{
+section h3{
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+.skill-list{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    list-style: none;
+    padding: 0;
 }
-.skills{
-    background-color: white ;
-    padding: 5px 3px 5px;
-    /*border-radius: 20px;*/
-    font-size: 14px;
-    color: black;
+.skill-list li{
+    padding: 8px 10px;
+    margin: 6px 0;
+    border-radius: 6px;
 }
+
+
+
 .tools{
     display: flex;
     flex-wrap: wrap;
@@ -118,6 +170,19 @@ section h2{
     /*border-radius: 20px;*/
     font-size: 14px;
     color: black;
+}
+.card{
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-12px);
+    box-shadow: 0px 12px 30px rgbaa(0, 0, 0, 0.15);
+    border-radius: 12px;
+    border: 1px solid #446a91;
+    background-color: rgb(197, 214, 225)
 }
 
 /*.content{
@@ -173,10 +238,10 @@ table{
         font-size: 18px;
     }
 }
-#menuIcon{
+#menu-icon{
     font-size: 28px;
     cursor: pointer;
-    display: block;
+    display: none;
 }
 @media(max-width: 768px){
     #menuIcon{
@@ -191,6 +256,9 @@ table{
         display: block;
     }
 }
+
+
+
 html{
     scroll-behavior: smooth;
 }

@@ -10,19 +10,34 @@
         <h1>Haritha Yaramala</h1>
         <p>Fresher</p>
     </header>
-    <!--<div id="menuIcon">☰</div>-->
+    <div id="menu-icon">☰</div>
     <div class="nav" id="navMenu">
         <a href="#about" class="nav-link">About</a>
         <a href="#education"  class="nav-link">Education</a>
         <a href="#skills"  class="nav-link">Skills</a>
         <a href="#tools"  class="nav-link">Tools</a>
+        <div class="nav-link project-dropdown">
+            <a href="#projects" class="nav-main-link">Projects ▾</a>
+            <div class="project-menu">
+             <a href="#academic">Academic Projects</a>
+             <a href="#personal">Personal Projects</a>
+        </div>
     </div>
+
+    </div>
+    </div>
+
+
+
     <section id="about">
-        <h2>About Me</h2>
-        <!--<button id="about-btn">Change About Text</button>-->
+        <div class="card">
+            <h2>About Me</h2>
         <p id="about-text">
             Computer Science Engineeing graduate (2023) and hands on skills in  Full Stack Web Development. Quick learner with good communication skills.
         </p>
+
+        </div>
+        
     </section>
     
     <section id="education">
@@ -30,24 +45,28 @@
         <table border="2">
             <tr>
                 <th>Degree</th>
+                <th>Specialization</th>
                 <th>Year</th>
                 <th>Institute</th>
                 <th>CGPA</th>
             </tr>
             <tr>
-                <td>B.Tech (CSE)</td>
+                <td>B.Tech</td>
+                <td>CSE</td>
                 <td>2023</td>
                 <td>Swarn Bharathi Institute of Science and Technology</td>
                 <td>7.5</td>
             </tr>
             <tr>
-                <td>Inter (MPC)</td>
+                <td>Inter </td>
+                <td>MPC</td>
                 <td>2019</td>
                 <td>Sri Chaitanya Jr Collage</td>
                 <td>9.3</td>
             </tr>
             <tr>
                 <td>10th</td>
+                <td>-</td>
                 <td>2017</td>
                 <td>New Era High School</td>
                 <td>9.0</td>
@@ -56,30 +75,111 @@
     </section>
     <section id="skills">
         <h2>Skills</h2>
-        <div class="skills">
-        <span class="skills">HTML</span>
-        <span class="skills">CSS</span>
-        <span class="skills">JavaScript</span>
-        <span class="skills">Java</span>
+        <div class="card">
+            <h3> Technical Skills</h3>
+            <ul class="skill-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React JS</li>
+                <li>Java</li>
 
-    </div>
-        <!--<ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Java</li>
-        </ul>-->
+            </ul>
+       </div>
+       <div class="card">
+        <h3> Soft Skills</h3>
+            <ul class="skill-list">
+                <li>communication</li>
+                <li>Presentation</li>
+                <li>Teamwork</li>
+                <li>Problem Sloving</li>
+                <li>Time Management</li>
+                <li>Quick Learner</li>
+
+            </ul>
+
+       </div>
+        
     </section>
 
     <section id="tools">
-        <h2>Tools</h2>
-        <div class="tools">
-        <span class="tools">VsCode</span>
+        <div class="card">
+            <h2>Tools</h2>
+        <div class="tools" class="card">
+        <span class="tools">VS Code</span>
         <span class="tools">Git</span>
         <span class="tools">GitHub</span>
 
     </div>
+
+        </div>
+        
     </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+            <h3 id="academic">Acadamic Projects</h3>
+            <ul>
+                <li>
+                    <h4>To Balance Electricity Consumption and Maintenance Cost in Cloud based Data Centers</h4>
+                    <p>
+                        Developed a cloud-based model to optimize electricity usage and reduce maintenance cost in data centers. The system analyzes workload distribution and resource utilization to improve efficiency. 
+                       Focused on performance monitoring and cost-aware resource allocation.
+                    </p>
+                    <p><b>Technologies:</b> Java, HTML, CSS, JavaScript, MySQL</p>
+                </li>
+                <li>
+                    <h4>A secure Block Chain-Based Scheme foe IoT Data Credability in Fog Environment</h4>
+                    <p>
+                        Designed a blockchain-based security framework to verify IoT data credibility in fog computing environments. 
+                        Implemented secure data validation and tamper-proof storage mechanisms to improve trust and reliability.
+  
+                    </p>
+                    <p><b>Technologies:</b> Java, HTML, CSS, JavaScript, MySQL</p>
+                </li>
+            </ul>     
+        
+        </div>
+        <div class="card">
+                <h3 id="personal">Personal Projects</h3>
+                <ul>
+                    <li>
+                        <h4>Resume Portfolio Website</h4>
+                        <p>
+                            Designed and developed a responsive personal portfolio website to showcase my skills, projects, education details. Implemented hover effects, smooth scrolling navigation. 
+                            Optimized layout for desktop and mobile screens.
+                        </p>
+                        <p><b>Technologies:</b> HTML, CSS, JavaScript</p>
+                    </li>
+                </ul>
+            </div>
+
+    </section>
+
+    <section id="certification">
+        <div class="card">
+            <h2>Certification</h2>
+            <p id="certification">
+           Completed professional training in Full Stack Java Development at Centum Foundation covering Java and Web technologies.
+           </p>
+         </div>
+    </section>
+
+    <section id="Interests">
+        <div class="card">
+            <h2>Interests</h2>
+        <ul>
+            <li>Generating AI Images</li>
+            <li>Exploring AI tools</li>
+            <li>Web Development</li>
+        </ul>
+
+        </div>
+        
+    
+    </section>
+    
 
 </body>
 <script src="script.js"></script>
